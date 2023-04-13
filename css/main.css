@@ -1,0 +1,141 @@
+#wrap{width:100%}
+        #wrap > div{ width: 100%; height:100vh}
+        #wrap > div:nth-child(1){background-color: rgb(202, 207, 212); background:url(../main.png) no-repeat 0 0;}
+        #wrap > div:nth-child(2){background:url(../profile.png) no-repeat 0 0;}
+        #wrap > div:nth-child(3){background-color: rgb(235, 241, 240);}
+        #wrap > div:nth-child(4){background-color: rgb(135, 183, 222);}
+        #wrap > div:nth-child(5){background-color:#fff;}
+        #wrap > div > div{margin: 0 auto; width: 1500px;  height: 850px;}
+        #main .header{ width: 100%; height: 120px;} 
+        #main .logo{float: left; margin:  20px 0 0 0;  
+                    width: 180px; height: 80px;  color: #716E64;} 
+        #main .nav{ float: right; margin: 50px 0 0 0;}
+        #main .nav li{ float: left; margin-right: 50px;}     
+        #main .nav a{font-size: 20px; font-weight: 600; color:#716E64; 
+                    } 
+        #main .nav li.on a{color:#000;}
+                   
+        #main .ttl_box{
+            width:1500px;height: 300px;
+            display: flex; justify-content: left;
+            /* border: 2px solid #000; */
+        }  
+        #main .sub_ttl1{
+            letter-spacing: 5px;
+            line-height: 137px;
+            text-transform: uppercase;
+            float: right; margin: 10px 0 0 0;
+            font-size: 126px; color:#333;
+        }
+        #main .name{ 
+            display: block; float: left;
+            margin:50px 0 0 0; font-weight: 100;
+            font-size:60px;
+            padding-right:100px; box-sizing: border-box;}
+        #main .img_box{
+            overflow: hidden; margin-top: 200px;
+            width: 1500px; height: 300px; border-radius: 8px 100px 8px 8px;  
+        }   
+             /* 프로필 */  
+        #profile{
+            padding-top: 200px; box-sizing: border-box;
+        }
+        #profile .ttl{
+            font-size: 56px; 
+            color: #716E64;
+            float: left;
+        }
+        .profile_img{
+            float: left; margin: 105px 0 0 0 ; overflow: hidden;
+            width:500px; height: 500px; border-radius: 50%;
+            opacity: 0.7;
+
+        }
+        .txt_box{
+            background-color: yellowgreen;
+            float: right; margin: 105px 100px 0 0;
+        }
+        .txt_box h3{
+            margin: 0 0 10px 0;color:rgb(195,216,232);
+            font-size: 20px; font-weight: 700;
+        }
+        .txt_box h4{
+            font-size: 80px; margin-bottom: 10px;
+        }
+
+        #skill{position: relative;}
+        .background{
+            position: absolute;top:16vh;right: 20vw;border-radius: 9px;
+            width:650px; height: 700px; overflow: hidden; opacity: 0.7;}
+        .front{
+            position: absolute; top:20vh; left: 20vw; z-index: 100;
+            width:1000px ; height:617px;background-color: #fff;
+            border-radius: 9px;
+        }
+        .skill_graph_area{
+            position: absolute; top: 9vh; left:3vw; z-index: 200;
+            width: 400px; height: 450px;
+        }
+        .skill_text_box{
+            position: absolute; top: 25vh; right: 3vw;z-index: 200;
+            width: 400px; height: 300px; border: 2px solid #ccc;
+        }
+       
+        #skill .skill_list{display: flex; justify-content: space-between;}
+        #skill .skill_list > li{ text-align: center;}
+        #skill .skill_list > li > div{
+             width: 50px; height:450px; border:2px solid #ccc;
+             box-sizing: border-box;
+             position: relative; overflow: hidden;}
+        #skill .skill_list > li > h5{font-family: 20px; }    
+        #skill .skill_list > li > div > .in_box{
+            width: 50px; height:500px; background-color: #5f7ad3;
+            position: absolute; top:300px; left: 0; font-size: 16px; color: #fff; }
+
+        /* 프로젝트 */
+        #project_1{}                                             
+        /* #project_1 .in_project_1{display: flex; justify-content: center; align-items: center;} */
+        .big_imgbox{
+            float: left; border-radius:9px; 
+            width: 500px; height: 700px; background-color: #716E64;}
+        #project_1 .left{
+            display: flex; flex-direction: column; align-items: center;
+            width: 40vw; height: 70vh;}
+        .project_expla{width: 25vw; height: 60vh; border: 2px solid #ccc;}
+        .imgbox_group{
+            width: 30vw; height: 20vh; margin-top: 30px;
+            display: flex;justify-content: space-around;
+        }
+        .imgbox{
+            width: 10vw; height: 20vh;border: 2px solid #ccc;
+        }
+        /* 마무리 */
+        .in_end{
+            padding-top: 150px; box-sizing: border-box;
+            display: flex; align-items: center;}
+        .end_left_box{
+            width: 50vw;height: 80vh;
+            
+        }
+        .end_left_box h2{
+            margin: 100px 0 10px 5vw;
+            font-size: 60px; color: #333;
+        }
+        .underline{
+            margin-left: 5vw;
+            width: 30vw; height: 2px;
+            background-color: #555;
+        }
+        .end_left_box h4{
+            margin:  10px 0 0 5vw;
+            font-size: 30px; color: #333;
+        }
+        .contact_box{
+            margin-left: 5vw;
+            width: 30vw; height: 40vh;
+            border: 2px solid #555;
+        }
+        .end_right_box{
+            width: 500px; height: 700px;
+            background:url(../images/mainimg01.png);
+        }
