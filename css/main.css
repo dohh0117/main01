@@ -36,7 +36,7 @@
             overflow: hidden; margin-top: 200px;
             width: 1500px; height: 300px; border-radius: 8px 100px 8px 8px;  
         }   
-             /* 프로필 */  
+             /* 소개 */  
         #profile{
             padding-top: 200px; box-sizing: border-box;
         }
@@ -55,14 +55,17 @@
             background-color: yellowgreen;
             float: right; margin: 105px 300px 0 0;
         }
-        .txt_box h3{
-            margin: 0 0 10px 0;color:rgb(195,216,232);
-            font-size: 20px; font-weight: 700;
-        }
         .txt_box h4{
-            font-size: 80px; margin-bottom: 10px;
+          font-size: 50px; font-weight: 100; margin-top: 10px;
         }
-
+        .txt_box h5{
+            display: block; float: left;
+            font-size: 30px; margin-bottom: 10px;
+        }
+        .txt_box .sub_box{
+            width: 2px;height: 15px;
+            background-color: #333;
+        }
         #skill{position: relative;}
         .background{
             position: absolute;top:16vh;right: 20vw;border-radius: 9px;
