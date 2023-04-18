@@ -1,9 +1,7 @@
 #wrap{width:100%}
         #wrap > div{ width: 100%; height:100vh}
         #wrap > div:nth-child(1){background-color: rgb(202, 207, 212); background:url(../main.png) no-repeat 0 0;}
-        #wrap > div:nth-child(2){background:url(../profile.png) no-repeat 0 0;}
         #wrap > div:nth-child(3){background-color: rgb(235, 241, 240);}
-        #wrap > div:nth-child(4){background-color: rgb(135, 183, 222);}
         #wrap > div:nth-child(5){background-color:#fff;}
         #wrap > div > div{margin: 0 auto; width: 1500px;  height: 850px;}
         #main .header{ width: 100%; height: 120px;} 
@@ -38,40 +36,46 @@
         }   
              /* 소개 */  
         #profile{
-            padding-top: 200px; box-sizing: border-box;
+            /* background-color: lightblue; */
+            margin-top: 50px; box-sizing: border-box;
         }
-        #profile .ttl{
-            font-size: 56px; 
-            color: #716E64;
-            float: left;
-        }
-        .profile_img{
-            float: left; margin: 105px 0 0 0 ; overflow: hidden;
-            width:300px; height: 300px; border-radius: 50%;
-            opacity: 0.7;
-
+        #profile .ttl{padding-top: 100px;}
+        #profile .profile_img{
+            float: left; margin: 350px 0 0 0 ; 
         }
         .txt_box{
-            background-color: yellowgreen;
-            float: right; margin: 105px 300px 0 0;
+            float: right; margin: 250px 300px 0 0;
+        }
+        .edu_box{
+            margin-top: 50px;
+           
+        }
+        .email_box{
+            margin-top: 50px;
         }
         .txt_box h4{
-          font-size: 50px; font-weight: 100; margin-top: 10px;
+          font-size: 70px; font-weight: 100; margin-top: 10px;
         }
         .txt_box h5{
-            display: block; float: left;
-            font-size: 30px; margin-bottom: 10px;
+            display: block; 
+            margin-bottom: 10px;
         }
-        .txt_box .sub_box{
-            width: 2px;height: 15px;
-            background-color: #333;
+        .txt_box p{
+            font-family: 'Pretendard-Regular';
+            line-height: 40px;
+            font-size:22px ; color: #333;
         }
-        #skill{position: relative;}
+        
+        /* 스킬 */
+        #skill{
+            margin-top: 50px;
+            position: relative;}
+        
         .background{
-            position: absolute;top:16vh;right: 20vw;border-radius: 9px;
+            position: absolute;top:150px;right:400px;border-radius: 9px;
             width:650px; height: 700px; overflow: hidden; opacity: 0.7;}
         .front{
-            position: absolute; top:20vh; left: 20vw; z-index: 100;
+            position: absolute; top:193px; left: 300px; z-index: 100;
             width:1000px ; height:617px;background-color: #fff;
             border-radius: 9px;
         }
@@ -79,11 +83,21 @@
             position: absolute; top: 9vh; left:3vw; z-index: 200;
             width: 400px; height: 450px;
         }
-        .skill_text_box{
-            position: absolute; top: 25vh; right: 3vw;z-index: 200;
-            width: 400px; height: 300px; border: 2px solid #ccc;
+        #skill .profile_img{
+            position: absolute;
+            top: 80px; right: 100px;
         }
-       
+        .skill_text_box{
+            float: right; padding: 430px 100px 0 0;
+           box-sizing: border-box;
+        }
+        .skill_text_box ul > li {
+            float: left; margin-right: 15px;
+        }
+
+        .skill_text_box ul > li > img{
+            width:55px ;height: 55px;
+        }
         #skill .skill_list{display: flex; justify-content: space-between;}
         #skill .skill_list > li{ text-align: center;}
         #skill .skill_list > li > div{
@@ -96,14 +110,17 @@
             position: absolute; top:300px; left: 0; font-size: 16px; color: #fff; }
 
         /* 프로젝트 */
-        #project_1{
-        }                                             
-        #project_1 .in_project_1{display: flex; justify-content: center; align-items: center;}
+        #project{
+        }           
+        /* #project .group{margin: 0 auto;}                                   */
+        /* #project_1 .in_project_1{
+            display: flex; justify-content: center; align-items: center;} */
         .big_imgbox{
+            margin-top:170px ;
             float: left; border-radius:9px; 
             width: 500px; height: 700px; background-color: #716E64;}
-        #project_1 .left{
-           float: left;margin: 0 0 0 100px;
+        #project .left{
+           float: left;margin: 170px 0 0 100px;
             width: 380px; height: 700px;}
         .project_expla{width: 380px; height: 500px; border: 2px solid #ccc;}
         .imgbox_group{
@@ -117,10 +134,9 @@
         /* 마무리 */
         .in_end{
             padding-top: 150px; box-sizing: border-box;
-            display: flex; align-items: center;}
+            }
         .end_left_box{
-            width: 50vw;height: 80vh;
-            
+            float: left;
         }
         .end_left_box h2{
             margin: 100px 0 10px 5vw;
@@ -141,6 +157,7 @@
             border: 2px solid #555;
         }
         .end_right_box{
-            width: 500px; height: 700px;
+            float: right; padding-left: 100px;
+            width: 500px; height: 650px;
             background:url(../images/mainimg01.png);
         }
