@@ -20,6 +20,18 @@ $(document).ready(function(){
 
                     }
                 });
+                //$('#project .slide_box1').hide();
+                $('#project .group .project_box1').mouseenter(function(){
+                $('#project .group .slide_box1').show().animate({top:'0',left:'0'})
+
+                })
+                $('#project .group ul>li:nth-child(1)').mouseleave(function(){
+                    $('#project .group .slide_box1').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'}).fadeOut();
+
+                })
+
+
+    
 
 
 })
