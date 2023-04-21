@@ -110,31 +110,39 @@
             position: absolute; top:300px; left: 0; font-size: 16px; color: #fff; }
 
         /* 프로젝트 */
-        #project{
-        }           
-        /* #project .group{margin: 0 auto;}                                   */
-        /* #project_1 .in_project_1{
-            display: flex; justify-content: center; align-items: center;} */
-        .big_imgbox{
-            margin-top:170px ;
-            float: left; border-radius:9px; 
-            width: 500px; height: 700px; background-color: #716E64;}
-        #project .left{
-           float: left;margin: 170px 0 0 100px;
-            width: 380px; height: 700px;}
-        .project_expla{width: 380px; height: 500px; border: 2px solid #ccc;}
-        .imgbox_group{
-            width: 380px; height: 150px;  margin-top: 30px;
-            display: flex; justify-content: space-between;
+        #project{margin-top: 100px;}
+        #project .group{
+            margin-top: 200px;
+            width: 100%; height: 600px;
+            background-color: #555;
+            display: flex; align-items: center;
         }
-        .imgbox{
-            float: left;
-            width: 173px; height:150px;border: 2px solid #ccc;
+        #project .ttl{
+            clear: both;
         }
+        #project .group ul{
+            margin: 0 auto;
+            padding-top: 50px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            width: 1300px;
+            height: 500px;
+           
+        }
+        #project .group ul>li{
+            cursor: pointer;
+            width: 380px; height: 380px;
+            background-color: #fff;
+        }
+        #project .group ul>li:nth-child(1){
+            background: url(../images/clonecodding_project1.PNG);
+           
+        }
+        
+
         /* 마무리 */
-        .in_end{
-            padding-top: 150px; box-sizing: border-box;
-            }
+        
         .end_left_box{
             float: left;
         }
