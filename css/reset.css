@@ -11,11 +11,7 @@ h1,h2,h3,h4,h5{
     font-family:'Bebas Neue', cursive;
     font-weight: 100;
     color: #666;}
-    .profile_img{
-        overflow: hidden;
-        width:300px; height: 300px; border-radius: 50%;
-        opacity: 0.7;background: url(../images/blue-tang-6768759_1280.jpg) ;
-    }
+   
 .ttl{
     
     font-size: 56px; color: #716E64;

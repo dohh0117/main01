@@ -13,8 +13,25 @@ $(document).ready(function(){
             var section = $('#wrap > div').eq(i);
             var tt = section.offset().top;
             
-            $('html, body').stop().animate({scrollTop:tt},1000);})
-       
+            $('html, body').stop().animate({ scrollTop: tt }, 1000);
+        })
+    //--------------------------------------------------------------------------
+    
+    var screen01Num = 1;
+    $(window).scroll(function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 880 && screen01Num == 1) {
+            screen01Num == 0;
+            $('.profile_img').animate({ opacity: '100%' })
+            
+        }
+        else if (scrollTop < 700 && screen01Num == 0) {
+             screen01Num == 1;
+           
+        }
+            
+        
+    })
 
     //-------------------------------------------------------------------
     var scene01Num = 1;
@@ -60,7 +77,8 @@ $(document).ready(function(){
                     $('#project .group .slide_box3').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
                             
                 })
-
+//----------------------------------------------------------------------------------------------------
+    
     
 
 

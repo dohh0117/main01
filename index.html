@@ -216,10 +216,49 @@
                     <h2>Thank you</h2>
                     <div class="underline"></div>
                     <h4>contact</h4>
-                    <div class="contact_box"></div>
+                    <div class="contact_box">
+                        <form id="form">
+                            <label>To</label>
+                            <input  class="to_input" type="text" name="to_name" /><br /><br />
+                            <label>From</label>
+                            <input class="to_from" type="text" name="from_name" /><br /><br />
+                            <label>Email</label>
+                            <input class="to_email" type="email" name="user_email" /><br /><br />
+                            <label>Message</label><br/>
+                            <textarea name="message"></textarea><br />
+                            <input class="contact_button" type="submit" value="Send" id="button"/>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                    </script>
+    
+                    <script type="text/javascript">
+
+                        emailjs.init('fJHJR14fC7Z8NxHcM')
+                        const btn = document.getElementById('button');
+                        document.getElementById('form')
+                            .addEventListener('submit', function (event) {
+                                event.preventDefault();
+                                btn.value = 'Sending...';
+
+                                const serviceID = 'service_jqlhrbl';
+
+                                const templateID = 'template_xv12fwe';
+
+                                emailjs.sendForm(serviceID, templateID, this)
+                                    .then(() => {
+                                        btn.value = 'Send Email';
+                                        alert('메일보내기 성공');
+                                    }, (err) => {
+                                        btn.value = 'Send Email';
+                                        alert(JSON.stringify(err));
+                                    });
+                            });
+
+                    </script>
                 </div>
                 <div class="end_right_box">
-                    <img src="./images/mainimg01.png">
+                   
                 </div>
             </div>
         </div>
