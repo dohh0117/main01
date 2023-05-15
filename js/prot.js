@@ -23,7 +23,7 @@ $(document).ready(function(){
         if (scrollTop > 880 && screen01Num == 1) {
             screen01Num == 0;
             $('.profile_img').animate({ opacity: '100%' })
-            
+            $('.profile_txt_box').animate({ opacity: '100%' })
         }
         else if (scrollTop < 700 && screen01Num == 0) {
              screen01Num == 1;
