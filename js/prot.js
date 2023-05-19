@@ -63,7 +63,16 @@ $(document).ready(function(){
                     $('#project .group .slide_box2').show().animate({top:'0',left:'0'})})
 
                 $('#project .group .project_box3').mouseenter(function(){
-                    $('#project .group .slide_box3').show().animate({top:'0',left:'0'})})  
+                    $('#project .group .slide_box3').show().animate({ top: '0', left: '0' })
+                })
+                $('#project .group2 .project_box1').mouseenter(function(){
+                  $('#project .group2 .slide_box1').show().animate({top:'0',left:'0'})})
+
+                $('#project .group2 .project_box2').mouseenter(function(){
+                    $('#project .group2 .slide_box2').show().animate({top:'0',left:'0'})})
+
+                $('#project .group2 .project_box3').mouseenter(function(){
+                    $('#project .group2 .slide_box3').show().animate({top:'0',left:'0'})})
                 //프로잭트 박스에니메이트 마우스가 떨어졌을때
                 $('#project .group .slide_box1').mouseleave(function(){
                     $('#project .group .slide_box1').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
@@ -75,6 +84,18 @@ $(document).ready(function(){
                 })
                 $('#project .group .slide_box3').mouseleave(function(){
                     $('#project .group .slide_box3').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
+                            
+                })
+                $('#project .group2 .slide_box1').mouseleave(function(){
+                    $('#project .group2 .slide_box1').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
+                            
+                })
+                $('#project .group2 .slide_box2').mouseleave(function(){
+                    $('#project .group2 .slide_box2').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
+                            
+                })
+                $('#project .group2 .slide_box3').mouseleave(function(){
+                    $('#project .group2 .slide_box3').stop().css({top:'0',left:'0'}).animate({top:'400px',left:'400px'});
                             
                 })
 //----------------------------------------------------------------------------------------------------
