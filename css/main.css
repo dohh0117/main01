@@ -343,7 +343,10 @@
             border: 2px solid #fff;
             user-select: none;
         }
-        #project .group2 .group_top>li>div{
+        #project .group2 .group_top>li>.project_box2{
+            background: url(../images/project_sub_image.png);
+        }
+        #project .group2 .group_top>li>.project_box3{
             background: url(../images/project_sub_image.png);
         }
 
@@ -357,6 +360,9 @@
         #project .group .project_box3{
             background: url(../images/namyang_image.png);
             background-size: 100% 100%;
+        }
+        #project .group2 .project_box1{
+            background: url(../images/project_02.png); 
         }
         #project .text_area{
             margin: 0 auto;
